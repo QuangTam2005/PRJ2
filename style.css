@@ -1,10 +1,24 @@
-/* Định dạng chung cho toàn bộ trang */
+/* Định dạng chung */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+/* Link "Skip to Main Content" */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #3498db;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px;
 }
 
 /* Định dạng tiêu đề */
@@ -21,21 +35,32 @@ nav {
     background-color: #2c3e50;
     padding: 10px;
     text-align: center;
+    display: inline-block;
+    width: 80%;
 }
+
+/* Định dạng danh sách trong nav */
+/* Comment phần này */
+/*
+nav ul li {
+    display: inline-block;
+    width: 150px;
+}
+*/
 
 nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline-block;
-    width: 150px;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+/* Chỉnh ảnh trong nav */
+nav img {
+    width: 10%;
 }
 
 /* Định dạng nội dung chính */
@@ -58,4 +83,25 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Định dạng .grid */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Định dạng ảnh trong .grid */
+.grid img {
+    width: 100%;
+}
+
+/* Định dạng .flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
